@@ -2,7 +2,7 @@
  * This class creates Hero objects.
  * 
  * @author Blaine Parr
- * @version January 27, 2015
+ * @version January 28, 2015
  */
 public class Hero 
 {
@@ -13,7 +13,7 @@ public class Hero
 	public String name;
 	
 	/**
-	 * This constructor generates Hero objects with the name provided by the user.
+	 * This constructor generates Hero objects with the name provided by the user
 	 * @param name The name of the hero
 	 */
 	public Hero(String name)
@@ -24,8 +24,8 @@ public class Hero
 	
 	//Private Methods/////////////////////////////////////////////////////////////////////////////
 	/**
-	 * This method randomly generates the values for the strength, speed and health abilities of
-	 * the hero
+	 * This method randomly generates a number between 1 and 100 for the values of the strength, 
+	 * speed and health abilities of the hero
 	 */
 	private void generateAbilities()
 	{
@@ -34,5 +34,54 @@ public class Hero
 		this.health = (int)(Math.random() * 100 + 1);
 	} //method generateAbilities ends
 	
+	/**
+	 * This method determines whether the hero hits the target or not. A random number between 1
+	 * and 100 is generated. If a number between 1 and 20 is generated call the hitDamage method
+	 * and return true, else return false
+	 * @return true if a number between 1 and 20 is generated, else return false
+	 */
+	private boolean hitAttempt()
+	{
+		//local variables
+		int randomNumber = (int)(Math.random() * 100 + 1);
+		
+		//if the number is between 1 and 20 return true, else return false
+		if(randomNumber >= 1 && randomNumber <= 20)
+		{
+			hitDamage();
+			return true;
+		} //if ends
+		return false;
+	} //method hit attempt ends
+	
+	/**
+	 * This method determines how much damage the hero does by multiplying the hero's strength
+	 * with a random number between 1 and 6
+	 * @return the hero's strength * a random number between 1 and 6
+	 */
+	private int hitDamage()
+	{
+		return this.strength * (int)(Math.random() * 6 + 1);
+	} //method hitDamage ends
+	
 	//Public Methods//////////////////////////////////////////////////////////////////////////////
+	/**
+	 * This method calls the hitAttempt method to determine if the hero hits the target
+	 */
+	public void fight()
+	{
+		this.hitAttempt();
+	} //method fight ends
+	
+	/**
+	 * This method prints the heroes strength, speed and health to the console
+	 */
+	public void show()
+	{
+		System.out.println("**********\n"
+				+ this.name + "'s stats"
+				+ "\nStrength: " + this.strength
+				+ "\nSpeed: " + this.speed
+				+ "\nHealth: " + this.health);
+	} //method show ends
 } //class Hero ends
