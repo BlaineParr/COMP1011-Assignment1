@@ -48,9 +48,13 @@ public class Hero
 		//if the number is between 1 and 20 return true, else return false
 		if(randomNumber >= 1 && randomNumber <= 20)
 		{
-			System.out.println("Damage Dealt: " + hitDamage());
+			//print out how much damage the hero dealt
+			System.out.println(this.name + " dealt " + hitDamage() + " damage!");
 			return true;
 		} //if ends
+		
+		//print out that the hero missed
+		System.out.println(this.name + " missed!");
 		return false;
 	} //method hit attempt ends
 	
@@ -79,7 +83,7 @@ public class Hero
 	public void show()
 	{
 		System.out.println(this.name + "'s stats"
-				+ "**********\n"
+				+ "\n**********"
 				+ "\nStrength: " + this.strength
 				+ "\nSpeed: " + this.speed
 				+ "\nHealth: " + this.health);

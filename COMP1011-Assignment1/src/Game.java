@@ -22,7 +22,12 @@
  * -Added a message to hitAttempt displaying "Damage Dealt: "
  * 
  * v1.1
- * -Changed asterisks printed in the Hero Class' to be printed after <Name>'s stats
+ * -Changed asterisks printed in the Hero Class' show method to be printed after <Name>'s stats
+ * 
+ * v1.2
+ * -Fixed Hero Class' show method to print out properly
+ * -Added a message if the Hero misses while fighting
+ * -Changed the damage dealt message in the Hero Class' hitAttempt method
  */
 public class Game 
 {
