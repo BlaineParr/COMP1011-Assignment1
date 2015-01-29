@@ -28,6 +28,9 @@
  * -Fixed Hero Class' show method to print out properly
  * -Added a message if the Hero misses while fighting
  * -Changed the damage dealt message in the Hero Class' hitAttempt method
+ * 
+ * v1.2.1
+ * -Added a more descriptive header to the Hero Class
  */
 public class Game 
 {

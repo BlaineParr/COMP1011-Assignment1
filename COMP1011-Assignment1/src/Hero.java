@@ -1,5 +1,8 @@
 /**
- * This class creates Hero objects
+ * This class creates Hero objects with randomly generated abilities. Class includes a method to
+ * view the Hero's stats and to fight. When fighting there is a 20% chance the Hero will hit their
+ * target. A message is printed to the console displaying that the hero either dealt damage, or
+ * that they missed.
  * 
  * @author Blaine Parr
  * @version January 28, 2015
