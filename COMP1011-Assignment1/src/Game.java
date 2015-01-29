@@ -20,6 +20,9 @@
  * v1.0
  * -Finished Game Class, with Hero using abilities
  * -Added a message to hitAttempt displaying "Damage Dealt: "
+ * 
+ * v1.1
+ * -Changed asterisks printed in the Hero Class' to be printed after <Name>'s stats
  */
 public class Game 
 {

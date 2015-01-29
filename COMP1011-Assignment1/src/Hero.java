@@ -78,8 +78,8 @@ public class Hero
 	 */
 	public void show()
 	{
-		System.out.println("**********\n"
-				+ this.name + "'s stats"
+		System.out.println(this.name + "'s stats"
+				+ "**********\n"
 				+ "\nStrength: " + this.strength
 				+ "\nSpeed: " + this.speed
 				+ "\nHealth: " + this.health);
