@@ -1,5 +1,5 @@
 /**
- * This class creates Hero objects.
+ * This class creates Hero objects
  * 
  * @author Blaine Parr
  * @version January 28, 2015
