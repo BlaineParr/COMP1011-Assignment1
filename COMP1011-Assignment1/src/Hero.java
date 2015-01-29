@@ -48,7 +48,7 @@ public class Hero
 		//if the number is between 1 and 20 return true, else return false
 		if(randomNumber >= 1 && randomNumber <= 20)
 		{
-			hitDamage();
+			System.out.println("Damage Dealt: " + hitDamage());
 			return true;
 		} //if ends
 		return false;
